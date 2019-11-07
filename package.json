@@ -1,0 +1,47 @@
+{
+  "name": "bestb4",
+  "version": "1.0.0",
+  "description": "Final Project",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server",
+    "dev": "NODE_ENV=development node server",
+    "local-dev": "NODE_ENV=local-development node server",
+    "server": "nodemon dotenv/config",
+    "test": "NODE_ENV=test jest",
+    "local-test": "NODE_ENV=local-test jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eashworth/BestB4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eashworth/BestB4/issues"
+  },
+  "homepage": "https://github.com/eashworth/BestB4#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.2.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.2.0",
+    "gravatar": "^1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.7",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "concurrently": "^5.0.0",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.4",
+    "superagent": "^5.1.0",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
